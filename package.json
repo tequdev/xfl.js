@@ -1,6 +1,6 @@
 {
   "name": "xfl.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -10,7 +10,8 @@
     "test": "vitest",
     "format": "biome format . --write",
     "lint": "biome lint .",
-    "check": "biome check --write ."
+    "check": "biome check --write .",
+    "prepublish": "npm run check && npm run build"
   },
   "keywords": [],
   "author": "",
