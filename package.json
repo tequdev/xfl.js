@@ -5,6 +5,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.cts",
+  "files": ["dist", "src"],
   "scripts": {
     "build": "pkgroll",
     "test": "vitest",
@@ -13,9 +14,13 @@
     "check": "biome check --write .",
     "prepublish": "npm run check && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tequdev/xfl.js.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "tequdev",
+  "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@tsconfig/node20": "^20.1.4",
