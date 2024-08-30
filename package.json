@@ -9,6 +9,7 @@
   "scripts": {
     "build": "pkgroll",
     "test": "vitest",
+    "test:ci": "vitest run",
     "format": "biome format . --write",
     "lint": "biome lint .",
     "check": "biome check --write .",
