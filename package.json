@@ -1,0 +1,29 @@
+{
+  "name": "xfl.js",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "scripts": {
+    "build": "pkgroll",
+    "test": "vitest",
+    "format": "biome format . --write",
+    "lint": "biome lint .",
+    "check": "biome check --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@tsconfig/node20": "^20.1.4",
+    "lefthook": "^1.7.14",
+    "pkgroll": "^2.4.2",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  }
+}

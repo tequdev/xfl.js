@@ -1,0 +1,8 @@
+{
+  "extends": "@tsconfig/node20",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "types": ["vitest/globals"]
+  }
+}
