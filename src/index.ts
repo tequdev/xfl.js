@@ -104,6 +104,10 @@ export function compare(a: bigint, b: bigint) {
   const man2 = BigInt(get_mantissa(b)) * (is_b_negative ? -1n : 1n)
   const exp2 = BigInt(get_exponent(b))
 
+  if (is_zero(a) && is_zero(b)) return 0
+  if (is_zero(a)) return is_b_negative ? 1 : -1
+  if (is_zero(b)) return is_a_negative ? -1 : 1
+
   if (exp1 === exp2) {
     if (man1 === man2) return 0
     return man1 > man2 ? 1 : -1

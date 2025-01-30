@@ -224,6 +224,11 @@ it('compare', () => {
   expect(compare(large_positive, large_negative)).toBe(1)
   expect(compare(large_positive, small_negative)).toBe(1)
   expect(compare(large_positive, small_positive)).toBe(1)
+
+  expect(compare(small_negative, 0n)).toBe(-1)
+  expect(compare(large_negative, 0n)).toBe(-1)
+  expect(compare(small_positive, 0n)).toBe(1)
+  expect(compare(large_positive, 0n)).toBe(1)
 })
 
 it('invert', () => {
